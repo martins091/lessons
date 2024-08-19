@@ -1,0 +1,315 @@
+body {
+    background-image: url(Website\ Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+h1 {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    padding: 30px 5px 5px 5px;
+    border-color: rgb(42, 46, 46);
+    border-bottom: 50px;
+    border-width: 1px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    font-family: 'Avenir', Open Sans, monospace;
+}
+
+h2 {
+    color: rgb(13, 13, 14);
+    padding: 5px 5px 10px 5px;
+    display: block;
+    font-size: 45px;
+    border-color: rgb(1, 8, 8);
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
+    text-align: center;
+}
+
+h3 {
+    margin: auto;
+    display: block;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
+.email {
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+#contact {
+    color: black;
+    font-size: 30px;
+    border: 4px;
+    border-color: black;
+}
+
+.mySkills {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 25px;
+}
+
+.myBio {
+    font-size: 25px;
+    text-align: center;
+}
+
+.name {
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+.hello {
+    display: block;
+}
+
+.there {
+    display: block;
+}
+
+.SubmitButton {
+    display: block;
+    padding: 15px;
+    margin: 20px 0;
+    color: white;
+    background-color: black;
+    font-size: large;
+}
+
+.SubmitButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.contactForm {
+    border: 4px;
+    border-style: solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    padding: 15px;
+    margin: auto;
+}
+
+/* .projectItems {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (min-width: 600px) {
+    .projectItems {
+
+        flex-direction: column;
+    }
+    
+    } */
+
+    .projectItems {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    /* Media query for screens 400px and narrower */
+    @media (max-width: 600px) {
+        .projectItems {
+            flex-direction: column;
+        }
+    }
+    
+
+.headerItems {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    position: fixed;
+    background-color: rgb(245, 237, 226);
+    width: 100%;
+    margin-top: -40px;
+}
+
+.aboutMe {
+    font-size: 25px;
+}
+
+.projectOne {
+    background-image: url(Project\ 2.jpg) ;
+    background-size: cover;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background-position: center;
+    margin: auto;
+}
+
+.projectTwo {
+    background-image: url(Project\ 5.jpg) ;
+    background-size: cover;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background-position: center;
+    margin: auto;
+}
+
+.projectThree {
+    background-image: url(Project\ 4.jpg) ;
+    background-size: cover;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background-position: center;
+    margin: auto;
+}
+
+
+Lesson Plan: Color Values in CSS
+1. Introduction to CSS Color Values
+Objective: Understand different ways to define colors in CSS.
+Why Colors Matter: Discuss the importance of colors in web design and user experience.
+2. Named Colors
+Definition: Predefined color names in CSS.
+Examples:
+color: red;
+color: blue;
+color: green;
+Activity: Create a simple HTML page and style different elements using named colors.
+3. HEX Color Codes
+Definition: Hexadecimal color codes start with a # followed by six characters (0-9, A-F).
+Format: #RRGGBB
+#FF0000 (Red)
+#00FF00 (Green)
+#0000FF (Blue)
+Shortened Form: #RGB
+#F00 (Red)
+#0F0 (Green)
+#00F (Blue)
+Activity: Convert named colors to HEX codes and apply them to elements.
+4. RGB Color Values
+Definition: RGB stands for Red, Green, Blue.
+Format: rgb(red, green, blue)
+rgb(255, 0, 0) (Red)
+rgb(0, 255, 0) (Green)
+rgb(0, 0, 255) (Blue)
+Range: Each value ranges from 0 to 255.
+Activity: Experiment with different RGB values to create custom colors.
+5. RGBA Color Values
+Definition: RGB with an Alpha channel for opacity.
+Format: rgba(red, green, blue, alpha)
+rgba(255, 0, 0, 1) (Fully opaque red)
+rgba(255, 0, 0, 0.5) (50% transparent red)
+Alpha Range: 0 (fully transparent) to 1 (fully opaque).
+Activity: Create transparent elements using RGBA values.
+6. HSL Color Values
+Definition: HSL stands for Hue, Saturation, Lightness.
+Format: hsl(hue, saturation%, lightness%)
+hsl(0, 100%, 50%) (Red)
+hsl(120, 100%, 50%) (Green)
+hsl(240, 100%, 50%) (Blue)
+Hue: Angle on the color wheel (0-360).
+Saturation: Percentage (0% is gray, 100% is full color).
+Lightness: Percentage (0% is black, 100% is white).
+Activity: Explore the HSL color wheel and apply different HSL values.
+7. HSLA Color Values
+Definition: HSL with an Alpha channel for opacity.
+Format: hsla(hue, saturation%, lightness%, alpha)
+hsla(0, 100%, 50%, 1) (Fully opaque red)
+hsla(0, 100%, 50%, 0.5) (50% transparent red)
+Activity: Create elements with varying opacity using HSLA values.
+8. Practical Exercises
+Exercise 1: Create a color palette using all the color value types.
+Exercise 2: Design a simple web page with a header, footer, and main content area, each using different color values.
+Exercise 3: Apply transparency to background colors and overlay text to see the effect.
+9. Summary and Q&A
+Review: Recap the different color values and their uses.
+Questions: Open the floor for any questions or clarifications.
+10. Homework/Project
+Project: Design a themed webpage (e.g., nature, technology, art) using a variety of color values to create an aesthetically pleasing design.
+
+Background Properties
+background-color
+background-image
+background-repeat
+background-size
+background-position
+background-attachment
+
+
+/* Transition */
+
+.btn {
+    transition-property: transform; /* Specifies which property to apply the transition to */
+    transition-duration: 0.3s; /* Duration of the transition */
+    transition-timing-function: ease; /* Timing function of the transition */
+    transition-delay: 0s; /* Delay before the transition starts */
+}
+
+.btn:hover {
+    transform: translate(-10px); /* Move the element 10px to the left when hovered */
+}
+
+.btn {
+    transition: transform 0.3s ease 0s;
+}
+
+.btn:hover {
+    transform: translate(-10px);
+}
+
+
+
+/* Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.btn {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.btn {
+    animation: slideInLeft 1s ease-in 1 normal forwards;
+}
